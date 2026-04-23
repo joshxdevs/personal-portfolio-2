@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JPAG — Full-Stack Developer & Designer</title>
+  <meta name="description" content="Full-stack developer and designer based in India. I build performant, beautifully crafted digital products — from system architecture to the last pixel." />
+  <meta name="keywords" content="full-stack developer, designer, React, Next.js, Node.js, portfolio, India" />
+  <meta property="og:title" content="JPAG — Full-Stack Developer & Designer" />
+  <meta property="og:description" content="Full-stack developer crafting exceptional digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JPAG — Full-Stack Developer & Designer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo" aria-label="JPAG — Home">
+        <span class="nav-logo-text">JPAG</span>
+      </a>
+
+      <div class="nav-links" role="list">
+        <a href="#work"    class="nav-link" role="listitem" data-section="work">Work</a>
+        <a href="#about"   class="nav-link" role="listitem" data-section="about">About</a>
+        <a href="#process" class="nav-link" role="listitem" data-section="process">Process</a>
+        <a href="#contact" class="nav-link" role="listitem" data-section="contact">Contact</a>
+      </div>
+
+      <a href="mailto:hello@jpag.dev" class="nav-status" id="nav-status" aria-label="Available for work — send me an email">
+        <span class="status-dot" aria-hidden="true"></span>
+        Available
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ╔═ HERO ═══════════════════════════════╗ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-inner">
+
+        <p class="hero-eyebrow" id="hero-eyebrow">
+          <span class="mono">Based in India</span>
+          <span class="hero-eyebrow-sep" aria-hidden="true">·</span>
+          <span class="mono">Open to opportunities</span>
+        </p>
+
+        <h1 class="hero-heading" id="hero-heading">
+          <span class="hero-line" data-delay="0">I build things</span>
+          <span class="hero-line" data-delay="1">worth using.</span>
+        </h1>
+
+        <p class="hero-sub" id="hero-sub">
+          Full-stack developer & designer. I care about the
+          details that separate good from great — the loading
+          states, the easing curves, the edge cases.
+        </p>
+
+        <div class="hero-ctas" id="hero-ctas">
+          <a href="#work" class="cta-primary" id="cta-work">
+            <span>View my work</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="mailto:hello@jpag.dev" class="cta-secondary" id="cta-email">hello@jpag.dev</a>
+        </div>
+
+        <div class="hero-meta" id="hero-meta">
+          <span class="mono dim">React · Next.js · Node.js · TypeScript · PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" id="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line-wrap">
+          <div class="scroll-line"></div>
+        </div>
+        <span class="mono">scroll</span>
+      </div>
+    </section>
+
+    <!-- ╔═ TICKER ══════════════════════════════╗ -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-fade ticker-fade--left"></div>
+      <div class="ticker-fade ticker-fade--right"></div>
+      <div class="ticker-track" id="ticker-track">
+        <div class="ticker-inner">
+          <span>React</span><span class="ticker-sep">·</span>
+          <span>TypeScript</span><span class="ticker-sep">·</span>
+          <span>Node.js</span><span class="ticker-sep">·</span>
+          <span>Next.js</span><span class="ticker-sep">·</span>
+          <span>PostgreSQL</span><span class="ticker-sep">·</span>
+          <span>Prisma</span><span class="ticker-sep">·</span>
+          <span>Redis</span><span class="ticker-sep">·</span>
+          <span>WebSockets</span><span class="ticker-sep">·</span>
+          <span>Docker</span><span class="ticker-sep">·</span>
+          <span>AWS</span><span class="ticker-sep">·</span>
+          <span>Figma</span><span class="ticker-sep">·</span>
+          <span>Tailwind CSS</span><span class="ticker-sep">·</span>
+          <span>tRPC</span><span class="ticker-sep">·</span>
+          <span>Zod</span><span class="ticker-sep">·</span>
+          <span>Vercel</span><span class="ticker-sep">·</span>
+        </div>
+        <div class="ticker-inner" aria-hidden="true">
+          <span>React</span><span class="ticker-sep">·</span>
+          <span>TypeScript</span><span class="ticker-sep">·</span>
+          <span>Node.js</span><span class="ticker-sep">·</span>
+          <span>Next.js</span><span class="ticker-sep">·</span>
+          <span>PostgreSQL</span><span class="ticker-sep">·</span>
+          <span>Prisma</span><span class="ticker-sep">·</span>
+          <span>Redis</span><span class="ticker-sep">·</span>
+          <span>WebSockets</span><span class="ticker-sep">·</span>
+          <span>Docker</span><span class="ticker-sep">·</span>
+          <span>AWS</span><span class="ticker-sep">·</span>
+          <span>Figma</span><span class="ticker-sep">·</span>
+          <span>Tailwind CSS</span><span class="ticker-sep">·</span>
+          <span>tRPC</span><span class="ticker-sep">·</span>
+          <span>Zod</span><span class="ticker-sep">·</span>
+          <span>Vercel</span><span class="ticker-sep">·</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ╔═ WORK ════════════════════════════════╗ -->
+    <section class="section" id="work" aria-label="Selected work">
+      <div class="container">
+
+        <header class="section-head reveal-up">
+          <span class="section-label mono">Selected work</span>
+          <h2 class="section-title">Projects that shipped.</h2>
+        </header>
+
+        <div class="work-list" role="list">
+
+          <!-- 01 — CareBridge -->
+          <article class="work-item reveal-up" role="listitem" id="project-carebridge">
+            <div class="work-item-left">
+              <span class="work-num mono">01</span>
+              <span class="work-year mono dim">2026</span>
+            </div>
+            <div class="work-item-right">
+              <div class="work-tags">
+                <span class="chip">Healthcare</span>
+                <span class="chip">Real-time</span>
+                <span class="chip">Full-stack</span>
+              </div>
+              <h3 class="work-title">CareBridge</h3>
+              <p class="work-desc">
+                A real-time healthcare concierge platform connecting patients with medical professionals across India. Features live emergency dispatch, OTP authentication via Better Auth, and intelligent triage — built on a WebSocket microservice architecture with sub-100ms latency.
+              </p>
+              <div class="work-stack mono">
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>WebSockets</span>
+                <span>PostgreSQL</span>
+                <span>Prisma</span>
+                <span>Better Auth</span>
+              </div>
+              <div class="work-links">
+                <a href="#" class="work-link" aria-label="View CareBridge on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" class="work-link" aria-label="View CareBridge live">
+                  Live
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 — Playlist Tracker -->
+          <article class="work-item reveal-up" role="listitem" id="project-playlist">
+            <div class="work-item-left">
+              <span class="work-num mono">02</span>
+              <span class="work-year mono dim">2025</span>
+            </div>
+            <div class="work-item-right">
+              <div class="work-tags">
+                <span class="chip">Productivity</span>
+                <span class="chip">Full-stack</span>
+              </div>
+              <h3 class="work-title">Playlist Tracker</h3>
+              <p class="work-desc">
+                A full-stack learning tracker for YouTube playlists. Features persistent watch-state, smart completion dashboards, role-based access control, and JWT authentication — synced to Neon PostgreSQL. Designed with skeleton loaders and a premium minimalist UI.
+              </p>
+              <div class="work-stack mono">
+                <span>React</span>
+                <span>Vite</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Neon</span>
+                <span>JWT</span>
+              </div>
+              <div class="work-links">
+                <a href="#" class="work-link" aria-label="View Playlist Tracker on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" class="work-link" aria-label="View Playlist Tracker live">
+                  Live
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 — This site -->
+          <article class="work-item reveal-up" role="listitem" id="project-portfolio">
+            <div class="work-item-left">
+              <span class="work-num mono">03</span>
+              <span class="work-year mono dim">2025</span>
+            </div>
+            <div class="work-item-right">
+              <div class="work-tags">
+                <span class="chip">Design</span>
+                <span class="chip">Portfolio</span>
+              </div>
+              <h3 class="work-title">This site.</h3>
+              <p class="work-desc">
+                A Vercel-inspired, typography-first portfolio. Zero frameworks — hand-crafted vanilla HTML, CSS, and JavaScript. Every animation curve, spacing value, and line-height deliberate. Built to obsess over what everyone else considers a footnote.
+              </p>
+              <div class="work-stack mono">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="work-links">
+                <a href="#" class="work-link" aria-label="View portfolio source on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔═ ABOUT ═══════════════════════════════╗ -->
+    <section class="section" id="about" aria-label="About me">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-left">
+            <span class="section-label mono reveal-up">About</span>
+            <h2 class="section-title about-title reveal-up">Obsessed<br/>with craft.</h2>
+          </div>
+
+          <div class="about-right">
+            <p class="about-text reveal-up">
+              I'm a full-stack developer based in India, building products from database schema to pixel-perfect UI. I believe software quality shows in the margins — the transitions, the empty states, the error messages.
+            </p>
+            <p class="about-text reveal-up">
+              When I'm not writing code, I'm studying design systems, analyzing how great products handle the small things, and contributing to open source. I care about the details others skip.
+            </p>
+
+            <div class="about-numbers reveal-up">
+              <div class="about-num-item">
+                <span class="about-num" data-target="3">0</span>
+                <span class="about-num-suffix">+</span>
+                <span class="about-num-label mono">years building</span>
+              </div>
+              <div class="about-num-item">
+                <span class="about-num" data-target="12">0</span>
+                <span class="about-num-suffix">+</span>
+                <span class="about-num-label mono">projects shipped</span>
+              </div>
+              <div class="about-num-item">
+                <span class="about-num">∞</span>
+                <span class="about-num-suffix"></span>
+                <span class="about-num-label mono">things to learn</span>
+              </div>
+            </div>
+
+            <div class="skills-grid reveal-up">
+              <div class="skill-group">
+                <span class="skill-group-label mono">Frontend</span>
+                <ul class="skill-list">
+                  <li>React / Next.js</li>
+                  <li>TypeScript</li>
+                  <li>CSS & Animation</li>
+                  <li>Figma / Design systems</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label mono">Backend</span>
+                <ul class="skill-list">
+                  <li>Node.js / Express</li>
+                  <li>PostgreSQL / Prisma</li>
+                  <li>Redis / WebSockets</li>
+                  <li>REST / tRPC / GraphQL</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label mono">Infra & tools</span>
+                <ul class="skill-list">
+                  <li>Docker</li>
+                  <li>AWS / Vercel</li>
+                  <li>CI/CD</li>
+                  <li>Monitoring / Observability</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔═ PROCESS ═════════════════════════════╗ -->
+    <section class="section" id="process" aria-label="How I work">
+      <div class="container">
+
+        <header class="section-head reveal-up">
+          <span class="section-label mono">How I work</span>
+          <h2 class="section-title">Process over output.</h2>
+        </header>
+
+        <ol class="process-list" role="list">
+
+          <li class="process-item reveal-up" id="process-1">
+            <span class="process-num mono">01</span>
+            <div class="process-body">
+              <h3 class="process-title">Understand deeply</h3>
+              <p class="process-desc">Before a single line of code, I map the problem space entirely — user flows, edge cases, technical constraints. The more you understand, the less you need to build.</p>
+            </div>
+          </li>
+
+          <li class="process-item reveal-up" id="process-2">
+            <span class="process-num mono">02</span>
+            <div class="process-body">
+              <h3 class="process-title">Design with intent</h3>
+              <p class="process-desc">Every visual decision earns its place. Typography, spacing, motion, color — I design in Figma first, so implementation is confident, not exploratory.</p>
+            </div>
+          </li>
+
+          <li class="process-item reveal-up" id="process-3">
+            <span class="process-num mono">03</span>
+            <div class="process-body">
+              <h3 class="process-title">Build incrementally</h3>
+              <p class="process-desc">Foundation first, then features, then finish. Each layer is solid before the next begins. Ship small, learn fast, iterate with precision.</p>
+            </div>
+          </li>
+
+          <li class="process-item reveal-up" id="process-4">
+            <span class="process-num mono">04</span>
+            <div class="process-body">
+              <h3 class="process-title">Polish obsessively</h3>
+              <p class="process-desc">The last 10% separates good from great. I invest disproportionate care into micro-interactions, empty states, error messages — the things nobody notices until they're absent.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ╔═ CONTACT ═════════════════════════════╗ -->
+    <section class="section section--contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact-inner reveal-up">
+          <span class="section-label mono">Let's build something</span>
+          <h2 class="contact-heading">Start a<br/>conversation.</h2>
+          <p class="contact-sub">
+            Available for freelance, contract, and full-time roles.<br />
+            Currently open — reach out.
+          </p>
+          <a href="mailto:hello@jpag.dev" class="contact-email" id="contact-email" aria-label="Email JPAG">
+            hello@jpag.dev
+          </a>
+          <div class="contact-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">GitHub</a>
+            <span class="contact-sep" aria-hidden="true">·</span>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Twitter / X profile">Twitter</a>
+            <span class="contact-sep" aria-hidden="true">·</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">LinkedIn</a>
+            <span class="contact-sep" aria-hidden="true">·</span>
+            <a href="#" class="contact-link" aria-label="Download resume">Résumé ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="mono dim">JPAG © 2026</span>
+      <span class="mono dim">Built with obsession.</span>
+      <span class="mono dim" id="footer-time">India · IST</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
